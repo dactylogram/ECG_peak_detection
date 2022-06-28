@@ -20,7 +20,7 @@ You need to manually download ECG databases in PhysioNet and Dataverse. Download
 Your data directory must be ordered like below.
 ```
 database
-├─ MITBIH
+├─ MIT_BIH
    ├─ l00.atr
    ├─ l00.dat
    ├─ l00.hea
@@ -35,4 +35,4 @@ database
 ```
 
 ## Peak detection
-You can see peak detection codes in 'detector.py' and 'detector.ipynb' files.
+You can see peak detection codes in 'detector.py' and 'detector.ipynb' files. Note that the model was trained by MIT_BIH, INCART, and QT databases and you can see cross-database performance when you test MIT_BIH_ST, European_ST_T, and TELE databases.
